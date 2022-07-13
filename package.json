@@ -1,0 +1,11 @@
+{
+  "name": "DAXWebsite",
+  "version": "1.0.0",
+  "description": "DAXWebsite Bootstrap",
+  "main": "index.html",
+  "repository": "https://github.com/ZainiNijar/DAXWebsite-Bootstrap-version",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
