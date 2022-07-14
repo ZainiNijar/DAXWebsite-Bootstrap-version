@@ -25,14 +25,27 @@
   line-height: 1.25rem;
 }
 
+.shape {
+  margin-left: 80px;
+  margin-top: -2px;
+}
+
+.shape-2 {
+  z-index: 9 !important;
+  position: relative;
+  margin-left: 80px;
+  margin-bottom: -62px;
+}
+
 .header {
   min-height: 100vh;
   min-width: 100vw;
-  height: 120vh;
+  height: 110vh;
   color: white;
-  background-position: center !important;
+  background-position: top -10px center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
   /* margin-top: -68px; */
 }
 
@@ -154,6 +167,10 @@
   color: var(--primary) !important;
 }
 
+.text-primary-darken {
+  color: var(--primary-darken) !important;
+}
+
 .bg-primary {
   background-color: var(--primary) !important;
 }
@@ -235,12 +252,62 @@
   background: #555;
 }
 
+.dec-section-3 {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+.bg-number {
+  font-size: 8rem; /* 128px */
+  line-height: 1;
+  font-weight: extrabold;
+  position: absolute;
+  right: 30px;
+}
+
+.card-works {
+  padding: 20px !important;
+  min-height: 200px;
+  min-width: 350px !important ;
+  margin-bottom: 50px !important;
+}
+
+.card-works p {
+  z-index: 99;
+}
+
+.works-container {
+  overflow-x: auto;
+}
+
+.works-container::-webkit-scrollbar {
+  height: 3px;
+  width: 3px;
+}
+.works-container::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+.works-container::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+.works-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media (min-width: 768px) {
   .fs-subtitle {
     font-size: 1.875rem /* 30px */;
     line-height: 2.25rem /* 36px */;
     margin-bottom: 2rem /* 32px */;
     line-height: 1.5;
+  }
+  .dec-section-3 {
+    position: absolute;
+    bottom: 0;
+    display: block !important;
   }
   .fs-title {
     margin-bottom: 2rem /* 32px */;
@@ -307,7 +374,7 @@
   transition: all 4s ease;
 }
 
-.ver_mas {
+.container_foto .ver_mas {
   background-color: #333333;
   position: absolute;
   width: 100%;
@@ -327,7 +394,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.ver_mas span {
+.container_foto .ver_mas span {
   font-size: 40px;
   color: #fff;
   position: relative;
@@ -362,4 +429,146 @@
   -o-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   opacity: 1;
+}
+
+.my-slider {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.controls {
+  position: relative;
+  top: -280px;
+  border: 1px solid transparent;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+}
+
+.btn-outline-primary {
+  border-radius: 0;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-primary svg:nth-child(1) {
+  display: inline;
+}
+.btn-outline-primary svg:nth-child(2) {
+  display: none;
+}
+
+.btn-outline-primary:hover svg:nth-child(1) {
+  display: none;
+}
+.btn-outline-primary:hover svg:nth-child(2) {
+  display: inline;
+}
+
+.btn-outline-primary:hover {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.card {
+  width: 100% !important;
+  border-radius: 0 !important;
+  border-color: transparent;
+}
+.card:hover {
+  border-color: var(--primary) !important;
+}
+
+/* PERSON CARD */
+
+.card-person {
+  width: 250px !important;
+  height: 350px !important;
+  position: relative;
+  border: 1px solid white;
+  color: white;
+  margin: 0 30px;
+  padding: 0 !important;
+}
+
+.card-person .info {
+  position: absolute;
+  bottom: 0;
+  opacity: 0.8;
+  background-color: #199cd8;
+  padding: 30px 15px 40px 15px;
+  width: 100%;
+  transition: 0.3s !important;
+}
+
+.card-person img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.card-person .linkedin {
+  border: 1px solid white;
+  padding: 5px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.card-person .linkedin .svg-blue {
+  display: none;
+}
+
+.card-person .linkedin:hover .svg-blue {
+  display: block;
+}
+
+.card-person .linkedin .svg-white {
+  display: block;
+}
+
+.card-person .linkedin:hover .svg-white {
+  display: none;
+}
+
+.card-person .linkedin:hover {
+  background-color: white;
+}
+
+.card-person .linkedin:hover svg {
+  color: black;
+}
+
+.card-person h1 {
+  padding-bottom: 5px;
+  font-size: 1.25rem /* 20px */;
+  border-bottom: 1px solid white;
+}
+
+.card-person h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.card-person h2 {
+  font-size: 1rem;
+}
+
+.card-person .desc {
+  font-size: small;
+  display: none;
+}
+
+/* info hover */
+.card-person .info:hover {
+  height: 100%;
+}
+
+.card-person .info:hover .desc {
+  display: block;
 }
