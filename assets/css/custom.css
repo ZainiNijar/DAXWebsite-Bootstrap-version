@@ -328,6 +328,12 @@
   }
 }
 
+@media (min-width: 576px) {
+  .sm-mb-5 {
+    margin-bottom: 30px !important;
+  }
+}
+
 /* PRODUCT CARD */
 .container_foto {
   background-color: #333333;
@@ -479,11 +485,24 @@
 
 .card {
   width: 100% !important;
+  transition: all 0.6s ease;
   border-radius: 0 !important;
   border-color: transparent;
 }
+
+.card .img-container {
+  overflow: hidden !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .card:hover {
   border-color: var(--primary) !important;
+}
+
+.card:hover img {
+  transition: all 0.6s ease;
+  transform: scale(1.1) !important;
 }
 
 /* PERSON CARD */
@@ -514,33 +533,36 @@
 }
 
 .card-person .linkedin {
+  position: absolute;
+}
+
+.linkedin {
   border: 1px solid white;
   padding: 5px;
-  position: absolute;
   bottom: 10px;
 }
 
-.card-person .linkedin .svg-blue {
+.linkedin .svg-blue {
   display: none;
 }
 
-.card-person .linkedin:hover .svg-blue {
+.linkedin:hover .svg-blue {
   display: block;
 }
 
-.card-person .linkedin .svg-white {
+.linkedin .svg-white {
   display: block;
 }
 
-.card-person .linkedin:hover .svg-white {
+.linkedin:hover .svg-white {
   display: none;
 }
 
-.card-person .linkedin:hover {
+.linkedin:hover {
   background-color: white;
 }
 
-.card-person .linkedin:hover svg {
+.linkedin:hover svg {
   color: black;
 }
 
