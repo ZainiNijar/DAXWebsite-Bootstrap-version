@@ -78,6 +78,11 @@ body {
   color: var(--warning) !important;
 }
 
+.navbar .nav-link.active {
+  border: 1px solid white;
+  color: var(--warning) !important;
+}
+
 .navbar .nav-link {
   border: 1px solid transparent;
 }
@@ -461,12 +466,12 @@ body {
 
 .prev {
   position: absolute;
-  left: 0;
+  left: -40px;
 }
 
 .next {
   position: absolute;
-  right: 0;
+  right: -40px;
 }
 
 .btn-outline-primary {

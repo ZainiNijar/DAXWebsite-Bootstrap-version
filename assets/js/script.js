@@ -39,3 +39,78 @@ btnServices.addEventListener("click", () => {
   products.classList.toggle("active");
   services.classList.toggle("active");
 });
+
+function navClassReset() {
+  $(".home").removeClass("active");
+  $(".our-solutions").removeClass("active");
+  $(".our-clients").removeClass("active");
+  $(".who-we-are").removeClass("active");
+  $(".careers").removeClass("active");
+  $(".contact-us").removeClass("active");
+}
+
+$(".home").click(function () {
+  navClassReset();
+  $(this).addClass("active");
+  $("html,body").animate(
+    {
+      scrollTop: $("#home").offset().top,
+    },
+    "slow"
+  );
+});
+
+$(".our-solutions").click(function () {
+  navClassReset();
+  $(this).addClass("active");
+  $("html,body").animate(
+    {
+      scrollTop: $("#our-solutions").offset().top,
+    },
+    "slow"
+  );
+});
+
+$(".our-clients").click(function () {
+  navClassReset();
+  $(this).addClass("active");
+  $("html,body").animate(
+    {
+      scrollTop: $("#our-clients").offset().top,
+    },
+    "slow"
+  );
+});
+
+$(".who-we-are").click(function () {
+  navClassReset();
+  $(this).addClass("active");
+  $("html,body").animate(
+    {
+      scrollTop: $("#who-we-are").offset().top - 200,
+    },
+    "slow"
+  );
+});
+
+$(".careers").click(function () {
+  navClassReset();
+  $(this).addClass("active");
+  $("html,body").animate(
+    {
+      scrollTop: $("#careers").offset().top - 100,
+    },
+    "slow"
+  );
+});
+
+$(".contact-us").click(function () {
+  navClassReset();
+  $(this).addClass("active");
+  $("html,body").animate(
+    {
+      scrollTop: $("#contact-us").offset().top,
+    },
+    "slow"
+  );
+});
