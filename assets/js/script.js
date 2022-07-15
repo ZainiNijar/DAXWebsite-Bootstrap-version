@@ -13,7 +13,7 @@ const scroller = (element, scrollTop, classAdd) => {
   });
 };
 
-scroller(navbarScroll, 70, "bg-dark");
+scroller(navbarScroll, 70, "bg-primary");
 
 // btn
 const btnProducts = document.getElementById("btn-products");
