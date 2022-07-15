@@ -8,6 +8,10 @@
   --warning: #a1c12b;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 .brand-logo {
   width: 2.5rem;
 }
@@ -313,6 +317,13 @@
     margin-bottom: 2rem /* 32px */;
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .call {
+    left: 10rem;
+    top: -10rem;
   }
 }
 
