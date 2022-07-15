@@ -42,7 +42,7 @@
   min-width: 100vw;
   height: 110vh;
   color: white;
-  background-position: top -10px center !important;
+  background-position: top -10px right !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
