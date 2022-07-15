@@ -6,6 +6,7 @@
   "repository": "https://github.com/ZainiNijar/DAXWebsite-Bootstrap-version",
   "license": "MIT",
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.1.3",
     "tiny-slider": "^2.9.4"
   }
